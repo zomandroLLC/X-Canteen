@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount"
+    >
+    <com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_gravity="start|center_horizontal"
+            android:background="@color/transparent"
+            android:src="@drawable/round_arrow_back_ios_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+        </ImageButton>
+        <TextView
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <ImageButton
+            android:src="@drawable/baseline_help_outline_24"
+            android:background="@color/transparent"
+            android:layout_width="50dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_height="50dp">
+        </ImageButton>
+    </com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+      >
+
+
+
+
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="622dp">
+
+
+            <Button
+                android:id="@+id/login_btn"
+                android:text="Google"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</LinearLayout>

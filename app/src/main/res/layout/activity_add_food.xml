@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dalPulseAddLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".AddFood">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/add_product_layout"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:elevation="4dp"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:id="@+id/dalPulseAddCloseBtn"
+                android:background="@color/white"
+                android:src="@drawable/round_arrow_back_ios_24"
+                android:layout_width="50dp"
+                android:layout_marginLeft="12dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Add Food"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_margin="24dp"
+                        android:background="@color/white">
+
+                        <ImageView
+
+                            android:id="@+id/chooseStaples"
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp">
+
+                        </ImageView>
+
+
+                        <ImageView
+                            android:id="@+id/add_product_image_ViewHint"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="24dp"
+                            android:background="@drawable/outline_image_24">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/tap_to_chooseStaplesImgTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="14dp"
+                            android:text="Tap to choose Image"
+                            android:textColor="@color/dodgerBlue">
+
+                        </TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Food Name"
+                        android:textColor="@color/dodgerBlue">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/product_name_et"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/product_input_ui"
+                        android:hint="Eg:Samosa"
+                        android:inputType="textPersonName"
+                        android:paddingStart="12dp"
+                        android:paddingLeft="12dp"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Price"
+                        android:textColor="@color/dodgerBlue">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/product_price_et"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/product_input_ui"
+                        android:hint="Eg: 15 Rs"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="12dp"
+                        android:paddingLeft="12dp"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Discount"
+                        android:textColor="@color/dodgerBlue">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/product_discount_et"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/product_input_ui"
+                        android:hint="Eg: -5Rs"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="12dp"
+                        android:paddingLeft="12dp"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp">
+
+                    </EditText>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:background="#A7A7A7"
+                        android:layout_height="0.5dp">
+                    </View>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:text="Product Specification"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+
+                        android:text="Select staples Types"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/staplesTypesSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp" />
+
+
+
+
+                    <Spinner
+                        android:id="@+id/StaplesProductTypeSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="12dp"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Quantity"
+                        android:textColor="@color/dodgerBlue">
+
+                    </TextView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/product_quantity_et"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/product_input_ui"
+                        android:hint="Quantity"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="12dp"
+                        android:paddingLeft="12dp"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp">
+
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Select Quantity Types"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/staplesMeasurementTypesSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Select Veg or Non-Veg"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/staplesVeg_non_TypesSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp" />
+
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Description"
+                        android:textColor="@color/dodgerBlue">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/product_description_et"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/product_input_ui"
+                        android:hint="Description"
+                        android:inputType="textPersonName"
+                        android:paddingStart="12dp"
+                        android:paddingLeft="12dp"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp">
+
+                    </EditText>
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/addStaplesItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/dodger_blue_btn_ui"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="Add Product"
+                    android:textColor="@color/dodgerBlue">
+                </Button>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

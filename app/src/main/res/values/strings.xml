@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">X-Canteen</string>
+    <string name="deliver_to">Deliver To</string>
+    <string name="recent_orders">Recent Orders</string>
+    <string name="today_s_menu">Today\'s Menu</string>
+    <string name="menu_item">Menu Item</string>
+    <string name="explore">Explore</string>
+    <string name="title_activity_main_home">MainHome</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_home_main">HomeMain</string>
+    <string name="rewards">Rewards</string>
+    <string name="snacks">Snacks</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="qr_code">Qr-Code</string>
+    <string name="searchbutton">SearchButton</string>
+</resources>

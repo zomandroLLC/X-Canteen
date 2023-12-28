@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="light_gray">#AAAAAA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+
+
+
+
+    <color name="DodgerbBlue">#0077D6</color>
+    <color name="gray">#DADADA</color>
+    <color name="DarkGray">#636363</color>
+    <color name="purple">#592AA3</color>
+    <color name="LightGreen">#59BC5D</color>
+    <color name="orange">#CF9C00</color>
+    //here is the hi bazzar color
+
+    <color name="pink">#FF0055</color>
+    <color name="dodgerBlue">#008EFF</color>
+    <color name="less_dodgerBlue">#C7E7FF</color>
+    <color name="less_white">#F3FAFF</color>
+    <color name="dark_green">#00B708</color>
+
+
+
+</resources>
